@@ -22,6 +22,10 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
 }
 
 HEADER H1{
@@ -47,22 +51,25 @@ HEADER NAV {
   position:absolute;
   position: fixed;
   text-align: right;
-  font-family: 'starjedi';
+  
   font-size: 1.2rem;
   z-index: 10;
 }
 header NAV UL {
   margin-left: 2rem;
+  margin: 10px;
 }
 HEADER NAV LI {
   display: inline;
   list-style-type: none;
+  
   margin: 0 15px 0 15px;           
 }
 
 HEADER NAV LI A { 
   color: #fff; 
   text-decoration: none;    
+  font-family: 'starjedi';
 }
 
 HEADER NAV LI A:hover { 
@@ -84,20 +91,23 @@ ASIDE {
 }
 ASIDE NAV {
   color: #fff;
-  font-family: 'starjedi';
+  
   font-size: 1.2rem;
   padding: 4px 4px;
   z-index: 10;
 }
 
 ASIDE NAV LI {
-  list-style-type: none;
-  padding-left: 1.5rem;        
+  list-style-type: none;   
+  padding: 10px 0 10px 1.5rem;   
+   
 }
 
 ASIDE NAV LI A { 
+      font-family: 'starjedi';
       text-decoration: none;
       color: #fff;
+      text-shadow: 0px 0px 1px #000;
 }
 ASIDE NAV LI A::before{
   font-family: 'starwarskit';
@@ -159,16 +169,31 @@ h2 {
   font-weight: 100;
   font-size: 1.5rem;
   padding: 6px 12px;
-  border-radius: 0 12px 0 12px;
+  border-radius: 0 12px 0 0px;
 }
 h6{
   font-size: 1rem;
+}
+
+article p{
+  font-size: 1.2rem;
+  padding: 18px 8px 12px 8px;
+}
+article p a{
+  color: #000;
+  font-style: italic;
+}
+article p a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+article p a::before{
+content: "»";
 }
 span {
   font-weight: bold;
 }
 table{
-  font-family: Arial, Helvetica, sans-serif;
   padding: 2px;
 }
 th{
