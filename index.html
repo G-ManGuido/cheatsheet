@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CheatSheet</title>
+</head>
+
+<body>
+    <header>
+        <h1>CheatSheet :: the secret playbook</h1>
+        <nav>
+            <ul>
+                <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                <li><a href="https://www.dafont.com/de/" target="_blank">DaFont.com</a></li>
+                <li><a href="https://fontawesome.com/" target=_blank">Font Awesome</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#terminal">MAC Terminal</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                    <li><a href="#shortcuts">ShortCuts</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <section>
+            <article>
+                <div id="terminal" class="sprunganker"></div>
+                <h2><i class="fas fa-terminal"></i> Hilfreiche Terminal-Befehle</h2>
+                <table>
+                    <tr>
+                        <th>Befehl</th>
+                        <th>Beschreibung</th>
+                        <th>Beispiel</th>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>Change Directory - wechselt in einen Unterordner</td>
+                        <td>
+                            <h6>cd Verzeichnis</h6>
+                            Beispiel: cd /Users /Documents /...
+
+                            Verzeichnisse (in Terminal "directory" genannt) werden mit einem "/" getrennt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>pwd</td>
+                        <td> Print Working Directory - zeigt das aktuelle Verzeichnis an</td>
+                        <td>
+                            <h6>pwd Verzeichnis</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ls</td>
+                        <td>List - zeigt den Inhalt eines Ordners an</td>
+                        <td>
+                            <h6>ls Verzeichnis</h6>
+                            Beispiel: ls -a zeigt auch unsichtbare Dateien an
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>cp</td>
+                        <td>Copy - kopiert Datei</td>
+                        <td>
+                            <h6>cp Pfad/Quellordner Pfad/Zielordner</h6>
+                            Beispiel: cp ~/Documents/Artikel.txt ~/Desktop/
+
+                            Achten Sie darauf den Pfad zum Quellordner (im Beispiel "~/Documents/") und den Pfad zum
+                            Ziel-Ordner (im Beispiel "~/Desktop/") anzugeben. Das Gleiche gilt auch für den Move-Befehl.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>mv</td>
+                        <td>Move - verschiebt eine Datei</td>
+                        <td>
+                            <h6>mv Pfad/Quellordner Pfad/Zielordner</h6>
+                            Beispiel: mv ~/Documents/Artikel.txt ~/Desktop/
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rm</td>
+                        <td>Remove - löscht Dateien. Unterscheidung zwischen Ordnern und Dateien.</td>
+                        <td>
+                            <p>Datei: <span>rm Pfad/Datei</span><br>
+                                Beispiel: rm ~/Documents/Artikel.text</p>
+                            <p>Ordner: <span>rmdir -R ~/Documents/Löschen</span><br>
+                                Beispiel: rmdir -R ~/Documents/Löschen</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>mkdir</td>
+                        <td>Make Directory - erzeugt einen neuen Ordner</td>
+                        <td>
+                            <h6>mkdir "Ordnerbezeichnung"</h6>
+                            Beispiel: mkdir "NeuerOrdner"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>kill</td>
+                        <td>Beendert den angegebenen Prozesse</td>
+                        <td>
+                            <h6>kill Prozessname</h6>
+                            Beispiel: kill cp ~/Documents/Artikel.txt ~/Desktop/
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>su</td>
+                        <td>Switch User - wechselt zum angegebenen Benutzer</td>
+                        <td>
+                            <h6>su Benutzername</h6>
+                            Beispiel: su Admin
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wildcards</td>
+                        <td>einzelne Terminal-Befehle auf mehrere Dateien anwenden</td>
+                        <td>
+                            <h6>Beliebige Zeichenkette: *</h6>
+                            Beispiel: mv *.png ./PNGs (verschiebt alle Dateien mit der Endung .png in den Ordner PNGs)
+                            <h6>Einzelnes beliebiges Zeichen: ?</h6>
+                            Beispiel: mv ?.png ./PNGs (nur Dateinamen mit exakt einem Zeichen als Dateiname werden in
+                            den Ordner PNGs verschoben)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>whoami</td>
+                        <td>Anzeige des aktuellen Benutzers</td>
+                        <td>whoami</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Anzeige des aktuellen Datums</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>screencapture</td>
+                        <td>Erzeugt Screenshot</td>
+                        <td>screencapture</td>
+                    </tr>
+                    <tr>
+                        <td>find</td>
+                        <td>Suchfunktion für Dateien</td>
+                        <td>
+                            <h6></h6>find /Verzeichnis/Dateiname</h6>
+                            Beispiel: find /home/bild1.jpeg
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>whatis</td>
+                        <td>Kurzinfo zum angegebenen Befehl</td>
+                        <td>whatis</td>
+                    </tr>
+                    <tr>
+                        <td>touch</td>
+                        <td>erzeugt eine Datei</td>
+                        <td>
+                            <h6>touch Dateiname mit Endung</h6>
+                            Beispiel: touch index.html
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>open</td>
+                        <td>führt eine Datei aus</td>
+                        <td>
+                            <h6>open Dateiname</h6>
+                            Beispiel: open /Applications/Safari.app
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>exit</td>
+                        <td>beendet die Session im aktuellen Terminal</td>
+                        <td>[Prozess beendet]</td>
+                    </tr>
+                    <tr>
+                        <td>help</td>
+                        <td>zeigt die Shell Hilfe zu einzelnen Commandos an</td>
+                        <td>
+                            <h6>help Commando</h6>Beispiel: help cd
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <section>
+            <article>
+                <div id="github" class="sprunganker"></div>
+                <h2><i class="fab fa-github"></i> GitHub</h2>
+                <table>
+                    <tr>
+                        <th>Befehl</th>
+                        <th>Beschreibung</th>
+                        <th>Beispiel</th>
+                    </tr>
+                    <tr>
+                        <td>cd</td>
+                        <td>Change Directory - wechselt in einen Unterordner</td>
+                        <td>
+                            <h6>cd Verzeichnis</h6>
+                            Beispiel: cd /Users /Documents /...
+
+                            Verzeichnisse (in Terminal "directory" genannt) werden mit einem "/" getrennt.
+                        </td>
+                    </tr>
+                </table>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eos officiis, beatae eius itaque
+                    earum
+                    doloremque ea fuga sunt sequi odit dolorum velit error modi assumenda facilis consequuntur, iste
+                    perferendis.</p>
+
+            </article>
+        </section>
+        <section>
+            <article>
+                <div id="shortcuts" class="sprunganker"></div>
+                <h2>ShortCuts</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eos officiis, beatae eius itaque
+                    earum
+                    doloremque ea fuga sunt sequi odit dolorum velit error modi assumenda facilis consequuntur, iste
+                    perferendis.</p>
+
+            </article>
+        </section>
+
+    </main>
+    <div class="nur"></div>
+    <script src="https://kit.fontawesome.com/8c93758a75.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
